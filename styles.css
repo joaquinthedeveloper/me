@@ -14,6 +14,7 @@ body{
     padding: 10px 10%;
 }
 
+/* flex means so they can be side by side */
 nav{
     display: flex;
     align-items: center;
@@ -67,6 +68,7 @@ nav ul li a:hover::after{
     color: #d9603b
 }
 
+/*---------------about----------*/
 #about{
     padding: 80px 0;
     color: #d9603b;
@@ -126,3 +128,21 @@ nav ul li a:hover::after{
 .tab-links.active-link::after{
     width: 100%;
 }
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #d9603b;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #d9603b;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #d9603b
+}
+
+ <!---------------about---------->
