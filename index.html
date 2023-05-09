@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, inital-scale=1.0" />
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/4e0c354279.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="header">
@@ -19,10 +20,9 @@
             <img src="img/letter-j.jpeg" class="logo">
             <ul>
               <li><a href="#">Home.</a></li>
-              <li><a href="#">About.</a></li>
-              <li><a href="#">Services.</a></li>
-              <li><a href="#">Portfolio.</a></li>
-              <li><a href="#">Contact.</a></li>
+              <li><a href="#about-me">About.</a></li>
+              <li><a href="#my-interests">Interests.</a></li>
+              <li><a href="#my-contact">Contact.</a></li>
             </ul>
           </nav>
            <!---------------header---------->
@@ -33,6 +33,7 @@
       </div>
     </div>
     <!---------------about---------->
+    <main>
     <div id="about">
       <div class="container">
         <div class="row">
@@ -40,7 +41,8 @@
             <img src="img/me.jpeg" alt="">
           </div>
           <div class="about-col-2">
-            <h1 class="sub-title">About Me.</h1>
+            <article>
+            <h1 class="sub-title"><a id="about-me"></a>About Me.</h1>
             <p class="about-me"> My passion for web development came from joking around with friends about me going into the tech industry.
               After, continuing to joke and talk more about it, I finally decided to learn on my own. Which was much harder than I thought. 
               As I continued to attempt to learn how to code, I saw a friend who graduated from Thinkful, 
@@ -48,9 +50,9 @@
               I decided to become a student a Thinkful, I've begun my journey to becoming a Software Engineer and couldn't be more excited.
               I am so excited to get this new career started and work with others and learn from other developers.
             </p>
-              
+          </article>       
             <div class="tab-title">
-                <p class="tab-links active-link">Interests.</p>
+                <p class="interests"><a id="my-interests"></a>Interests.</p>
             </div>
             <div class="tab-contents">
               <ul>
@@ -63,23 +65,26 @@
         </div>
       </div>
     </div>
-     <!---------------contact---------->
-     <div id="contact">
-      <div class="containter">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me.</h1>
-            <p>Joaquin@Thinkful.com</p>
-            <p>479.555.1541</p>
-            <div class="social-icons">
-              <a href="https://www.instagram.com/j.l.her/"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/joaquin-hernandez-b930891bb/"><i class="fab fa-linkedin"></i></a>
-              <a href="https://github.com/joaquinthedeveloper"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <div class="contact-right"></div>
+    </main>
+  </body>
+  <hr>
+  <footer>
+<!---------------contact---------->
+<div id="contact">
+  <div class="containter">
+    <div class="row">
+      <div class="contact">
+        <h1 class="sub-title"><a id="my-contact"></a>Contact Me.</h1>
+        <p>Joaquin@Thinkful.com</p>
+        <p>479.555.1541</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/j.l.her/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/joaquin-hernandez-b930891bb/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/joaquinthedeveloper"><i class="fa-brands fa-github"></i></a>
         </div>
       </div>
-     </div>
-  </body>
+    </div>
+  </div>
+ </div>
+  </footer>
 </html>

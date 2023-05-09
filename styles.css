@@ -105,18 +105,17 @@ nav ul li a:hover::after{
     margin: 20px 0 40px;
 }
 
-.tab-links{
+.interests{
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
-    cursor: pointer;
     position: relative;
     color: #000;
 }
 
-.tab-links::after{
+.interests::after{
     content: '';
-    width: 0;
+    width: 100%;
     height: 3px;
     background: #d9603b;
     position: absolute;
@@ -125,22 +124,24 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 
-.tab-links.active-link::after{
-    width: 100%;
+/*------------contact--------- */
+
+.contact{
+    flex-basis: 35%;
 }
 
-.btn{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #d9603b;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
+.contact p{
+    margin-top: 30px;
+}
+
+.contact i{
+    color: #000;
+    font-size: 30px;
+    margin-top: 30px;
+    transition: transform 0.5s;
+}
+
+.contact i:hover{
     color: #d9603b;
-    transition: background 0.5s;
-}
-
-.btn:hover{
-    background: #d9603b
+    transform: translateY(-5px);
 }
